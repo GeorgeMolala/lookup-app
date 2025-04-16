@@ -1,0 +1,7 @@
+{
+  "name": "lookup-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
