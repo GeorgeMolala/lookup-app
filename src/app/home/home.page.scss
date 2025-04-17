@@ -70,3 +70,19 @@
       font-size: 20px;
     }
   }
+  .search-container {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding-right: 8px;
+  }
+  
+  .search-button {
+    margin: 0;
+    height: 40px; /* Match searchbar height */
+  }

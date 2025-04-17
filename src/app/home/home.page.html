@@ -11,12 +11,25 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-searchbar
-    [(ngModel)]="city" 
-     placeholder="Enter city name" 
-    (ionChange)="searchCity()"
-     debounce="500">
-  </ion-searchbar>
+  <ion-item>
+    <div class="search-container">
+      <ion-searchbar
+        [(ngModel)]="city" 
+        placeholder="Enter city name"
+        (ionChange)="searchCity()"
+        debounce="500"
+        class="search-bar"
+      ></ion-searchbar>
+      <ion-button 
+        (click)="searchCity()"
+        [disabled]="!city"
+        class="search-button"
+      >
+        Search
+      </ion-button>
+    </div>
+  </ion-item>
+  
 
   <!-- Weather Card Section -->
 <div *ngIf="weatherData" class="weather-card">
