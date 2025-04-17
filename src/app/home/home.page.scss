@@ -1,0 +1,72 @@
+.weather-card {
+    margin: 16px 0;
+    
+    ion-card {
+      border-radius: 12px;
+    }
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0;
+    
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      ion-icon {
+        font-size: 24px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  
+  .favorites-list {
+    ion-item-sliding {
+      margin-bottom: 8px;
+    }
+    
+    ion-item {
+      --border-radius: 8px;
+    }
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    
+    .empty-icon {
+      font-size: 64px;
+      opacity: 0.3;
+      margin-bottom: 16px;
+    }
+    
+    h3 {
+      font-weight: 500;
+    }
+    
+    p {
+      color: var(--ion-color-medium);
+    }
+  }
+  .item-sliding-active-slide {
+    transition: transform 0.2s ease;
+  }
+  /* Optional: For remove button with text */
+.remove-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .button-label {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    
+    ion-icon {
+      font-size: 20px;
+    }
+  }
